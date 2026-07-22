@@ -1,0 +1,32 @@
+{
+  "name": "clearance",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Approval, spend-control, and billing layer for production AI agents",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "demo:reset": "curl -s -X POST http://localhost:3000/api/demo -H 'content-type: application/json' -d '{\"action\":\"reset\"}'"
+  },
+  "dependencies": {
+    "next": "15.5.21",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "stripe": "^22.3.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.21",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
